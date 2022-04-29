@@ -9,9 +9,9 @@
 
 <body class="">
   <!--#include file="./src/pages/projects.html" -->
-  <div class="flex items-center flex-col">
+  <div class="flex items-center flex-col mx-8">
 
-    <header>
+    <header class="w-full flex items-center py-6">
       <h1 id="intro" class="text-2xl font-semibold text-gray-800">Daniel Moderiano</h1>
       <!-- Navbar provides HTML bookmark links to scroll down page to section -->
       <nav>
@@ -31,20 +31,20 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="flex flex-col items-start w-full">
 
       <!-- INTRODUCTION section -->
-      <section id="intro">
+      <section id="intro" class="my-4 w-full">
         <h2 class="text-xl font-semibold text-gray-800">Daniel Moderiano</h2>
         <p>Full stack web developer</p>
       </section>
 
       <!-- SKILLS/TECH STACK section -->
-      <section id="skills" class="">
+      <section id="skills" class="my-4 w-full">
         <h2 class="text-xl font-semibold text-gray-800">Technologies</h2>
 
         <!-- FRONTEND section -->
-        <section class="border p-4 m-4 text-center bg-white rounded">
+        <section class="border p-4 my-4 text-center bg-white rounded">
           <h3 class="text-lg font-semibold mb-4">Frontend</h3>
           <ul class="grid grid-cols-3 gap-2 gap-y-4">
             <li class="flex flex-col items-center justify-center">
@@ -121,7 +121,7 @@
         </section>
 
         <!-- BACKEND section -->
-        <section class="border p-4 m-4 text-center bg-white rounded">
+        <section class="border p-4 my-4 text-center bg-white rounded">
           <h3 class="text-lg font-semibold mb-4">Backend</h3>
           <ul class="grid grid-cols-3 gap-2 gap-y-4">
             <li class="flex flex-col items-center justify-center">
@@ -231,7 +231,7 @@
           </ul>
         </section>
         <!-- MISCELLANEOUS section -->
-        <section class="border p-4 m-4 text-center bg-white rounded">
+        <section class="border p-4 my-4 text-center bg-white rounded">
           <h3 class="text-lg font-semibold mb-4">Miscellaneous</h3>
           <ul class="grid grid-cols-3 gap-2">
             <li class="flex flex-col items-center justify-center">
@@ -277,24 +277,26 @@
 
 
       <!-- PROJECTS section -->
-      <section id="projects">
+      <section id="projects" class="my-4 w-full">
         <h2 class="text-xl font-semibold text-gray-800">Projects</h2>
-        <article>
-          <h3>OptomRx</h3>
+        <article class="border p-4 my-4 bg-white rounded">
+          <h3 class="text-lg font-semibold">OptomRx</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis architecto maiores aperiam, ea aliquid
             dolores praesentium doloremque provident mollitia eveniet, iusto nisi, nam sed veritatis. Ab sed et officia
             dolores.</p>
+          <img src="./src/assets/images/optomrx-small.png" alt="optomrx web app dashboard">
         </article>
-        <article>
-          <h3>Odinbook</h3>
+        <article class="border p-4 my-4 bg-white rounded">
+          <h3 class="text-lg font-semibold">Odinbook</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis architecto maiores aperiam, ea aliquid
             dolores praesentium doloremque provident mollitia eveniet, iusto nisi, nam sed veritatis. Ab sed et officia
             dolores.</p>
+            <img src="./src/assets/images/odinbook-small.png" alt="odinbook web app profile page">
         </article>
       </section>
 
       <!-- CONTACT FORM section -->
-      <section id="contact">
+      <section id="contact" class="my-4 w-full">
         <h2 class="text-xl font-semibold text-gray-800">Contact</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, vero nisi. Quidem doloribus voluptatibus
           architecto natus unde rem libero laboriosam totam deleniti nemo, impedit, ducimus id nobis, alias aspernatur
