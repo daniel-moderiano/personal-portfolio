@@ -1,2 +1,4 @@
-import './output.css'
+import './output.css';
+
+console.log('Working');
 
