@@ -6,8 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "watch-tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "build-tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css",
+    "watch-tailwind": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch",
+    "build-tailwind": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css",
     "start": "concurrently \"npm run dev\" \"npm run watch-tailwind\""
   },
   "devDependencies": {

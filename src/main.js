@@ -1,4 +1,4 @@
-import './output.css';
+import './styles/output.css'
 
 console.log('Working');
 

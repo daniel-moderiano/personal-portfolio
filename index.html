@@ -6,9 +6,48 @@
   <title>Personal Portfolio</title>
 </head>
 <body>
+  <!--#include file="./src/pages/projects.html" -->
   <header>
-    <h1 class="text-2xl font-semibold">Personal portfolio</h1>
+    <h1 id="intro" class="text-2xl font-semibold text-gray-800">Daniel Moderiano</h1>
+    <!-- Navbar provides HTML bookmark links to scroll down page to section -->
+    <nav>
+      <ul class="flex items-center">
+        <li class="px-2">
+          <a class="hover:underline" href="#intro">Intro</a>
+        </li>
+        <li class="px-2">
+          <a class="hover:underline" href="#about">About</a>
+        </li>
+        <li class="px-2">
+          <a class="hover:underline" href="#projects">Projects</a>
+        </li>
+        <li class="px-2">
+          <a class="hover:underline" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </header>
+  <main>
+    <section id="intro">
+      <h2 class="text-xl font-semibold text-gray-800">Intro</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, vero nisi. Quidem doloribus voluptatibus architecto natus unde rem libero laboriosam totam deleniti nemo, impedit, ducimus id nobis, alias aspernatur similique?</p>
+    </section>
+    <section id="about">
+      <h2 class="text-xl font-semibold text-gray-800">About</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, vero nisi. Quidem doloribus voluptatibus architecto natus unde rem libero laboriosam totam deleniti nemo, impedit, ducimus id nobis, alias aspernatur similique?</p>
+    </section>
+    <section id="projects">
+      <h2 class="text-xl font-semibold text-gray-800">Projects</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, vero nisi. Quidem doloribus voluptatibus architecto natus unde rem libero laboriosam totam deleniti nemo, impedit, ducimus id nobis, alias aspernatur similique?</p>
+    </section>
+    <section id="contact">
+      <h2 class="text-xl font-semibold text-gray-800">Contact</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, vero nisi. Quidem doloribus voluptatibus architecto natus unde rem libero laboriosam totam deleniti nemo, impedit, ducimus id nobis, alias aspernatur similique?</p>
+    </section>
+  </main>
+  <footer>
+    <p class="text-gray-700 text-sm">&copy; 2022 Daniel Moderiano</p>
+  </footer>
   <script type="module" src="./src/main.js"></script>
 </body>
 </html>
