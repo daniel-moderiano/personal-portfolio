@@ -8,22 +8,20 @@
 </head>
 
 <body class="relative">
-  <!--#include file="./src/pages/projects.html" -->
-  <div class="flex items-center flex-col mx-8">
-
-    
+  
     <!-- HAMBURGER BUTTON -->
+
     <button id="hamburger" type="button" aria-label="Main menu" aria-expanded="false" aria-haspopup="true" aria-controls="mainmenu"
-      class="sm:hidden absolute left-2 top-2">
-      <span class="block w-8 h-1 bg-slate-600 transition-all my-1.5"></span>
-      <span class="block w-8 h-1 bg-slate-600 transition-all my-1.5"></span>
-      <span class="block w-8 h-1 bg-slate-600 transition-all my-1.5"></span>
+      class="sm:hidden absolute left-2 top-2 z-10">
+      <span id="line1" class="block w-8 h-1 bg-slate-600 transition-all my-1.5 rounded-full"></span>
+      <span id="line2" class="block w-8 h-1 bg-slate-600 transition-all my-1.5 rounded-full"></span>
+      <span id="line3" class="block w-8 h-1 bg-slate-600 transition-all my-1.5 rounded-full"></span>
     </button>
 
-
-    <!-- Navbar provides HTML bookmark links to scroll down page to section -->
-    <nav id="mainmenu" role="navigation" aria-label="Main menu" class="hidden sm:block">
-      <ul class="flex items-center" role="menubar">
+    <!-- Test mobile nav -->
+    <!-- <nav id="mainmenu" role="navigation" aria-label="Main menu" class="shadow-md absolute w-8/12 h-full bg-blue-400 -left-full transition-all"> -->
+    <nav id="mainmenu" role="navigation" aria-label="Main menu" class="shadow-md absolute w-8/12 h-full bg-blue-400 left-0 transition-all">
+      <ul class="flex flex-col items-center" role="menubar">
         <li class="px-2" role="none">
           <a class="hover:underline" href="#intro" role="menuitem">Intro</a>
         </li>
@@ -38,6 +36,30 @@
         </li>
       </ul>
     </nav>
+
+
+  <!--#include file="./src/pages/projects.html" -->
+  <div class="flex items-center flex-col mx-8">
+
+    
+
+    <!-- Navbar provides HTML bookmark links to scroll down page to section -->
+    <!-- <nav id="mainmenu" role="navigation" aria-label="Main menu" class="hidden sm:block">
+      <ul class="flex items-center" role="menubar">
+        <li class="px-2" role="none">
+          <a class="hover:underline" href="#intro" role="menuitem">Intro</a>
+        </li>
+        <li class="px-2" role="none">
+          <a class="hover:underline" href="#skills" role="menuitem">Technologies</a>
+        </li>
+        <li class="px-2" role="none">
+          <a class="hover:underline" href="#projects" role="menuitem">Projects</a>
+        </li>
+        <li class="px-2" role="none">
+          <a class="hover:underline" href="#contact" role="menuitem">Contact</a>
+        </li>
+      </ul>
+    </nav> -->
 
 
     <main class="flex flex-col items-start w-full mt-12" role="main">
