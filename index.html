@@ -10,33 +10,33 @@
 <body class="relative">
 
   <!-- Adds a background 'shadow' or 'veil' to better empahasise the opened nav menu. Not relevant for screen readers -->
-  <div id="veil" aria-hidden="true" class="w-full bg-gray-800 h-full absolute top-0 left opacity-0 transition-opacity"></div>
+  <div id="veil" aria-hidden="true" class="w-full bg-gray-800 h-full absolute top-0 left opacity-0 transition-opacity pointer-events-none"></div>
   
     <!-- HAMBURGER BUTTON -->
 
     <button id="hamburger" type="button" aria-label="Main menu" aria-expanded="false" aria-haspopup="true" aria-controls="mainmenu"
-      class="sm:hidden absolute left-2 top-2 z-10">
+      class="sm:hidden fixed left-2 top-2 z-10">
       <span id="line1" class="block w-8 h-1 bg-slate-600 transition-all my-1.5 rounded-full"></span>
       <span id="line2" class="block w-8 h-1 bg-slate-600 transition-all my-1.5 rounded-full"></span>
       <span id="line3" class="block w-8 h-1 bg-slate-600 transition-all my-1.5 rounded-full"></span>
     </button>
 
     <!-- Test mobile nav -->
-    <nav id="mainmenu" role="navigation" aria-label="Main menu" class="shadow-md absolute w-8/12 h-full bg-blue-400 -left-full transition-all">
+    <nav id="mainmenu" role="navigation" aria-label="Main menu" class="shadow-md fixed w-8/12 h-full bg-white -left-full transition-all">
    
     <!-- <nav id="mainmenu" role="navigation" aria-label="Main menu" class="shadow-md absolute w-8/12 h-full bg-blue-400 left-0 transition-all"> -->
       <ul class="flex flex-col items-center w-full mt-16" role="menubar">
-        <li class="py-3 px-6 w-full text-left" role="none">
-          <a class="hover:underline font-semibold text-lg" href="#intro" role="menuitem">Intro</a>
+        <li class="w-full text-left" role="none">
+          <a class="py-3 px-6 w-full block hover:underline font-semibold text-lg" href="#intro" role="menuitem">Intro</a>
         </li>
-        <li class="py-3 px-6 w-full text-left" role="none">
-          <a class="hover:underline font-semibold text-lg" href="#skills" role="menuitem">Technologies</a>
+        <li class="w-full text-left" role="none">
+          <a class="py-3 px-6 w-full block hover:underline font-semibold text-lg" href="#skills" role="menuitem">Technologies</a>
         </li>
-        <li class="py-3 px-6 w-full text-left" role="none">
-          <a class="hover:underline font-semibold text-lg" href="#projects" role="menuitem">Projects</a>
+        <li class="w-full text-left" role="none">
+          <a class="py-3 px-6 w-full block hover:underline font-semibold text-lg" href="#projects" role="menuitem">Projects</a>
         </li>
-        <li class="py-3 px-6 w-full text-left" role="none">
-          <a class="hover:underline font-semibold text-lg" href="#contact" role="menuitem">Contact</a>
+        <li class="w-full text-left" role="none">
+          <a class="py-3 px-6 w-full block hover:underline font-semibold text-lg" href="#contact" role="menuitem">Contact</a>
         </li>
       </ul>
     </nav>

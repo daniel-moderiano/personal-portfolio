@@ -7,6 +7,7 @@ const lineOne = document.querySelector('#line1');
 const lineTwo = document.querySelector('#line2');
 const lineThree = document.querySelector('#line3');
 const veil = document.querySelector('#veil');
+const navList = mainMenu.querySelector('ul');
 
 // Hide/show the navigation menu, and update the hamburger button aria-expanded status
 const toggleNav = () => {
@@ -22,7 +23,8 @@ const toggleNav = () => {
 
   // Darken app background
   veil.classList.toggle('opacity-0');
-  veil.classList.toggle('opacity-50')
+  veil.classList.toggle('opacity-50');
+  veil.classList.toggle('pointer-events-none');
 
   // Toggle aria expanded based on state at time of clicking btn
   if (hamburgerBtn.ariaExpanded === 'true') {    
@@ -32,4 +34,15 @@ const toggleNav = () => {
   }
 }
 
+
 hamburgerBtn.addEventListener('click', toggleNav);
+
+// Event propagation
+navList.addEventListener('click', (e) => {
+  if (e.target.nodeName === 'A') {   // nav menu link has been clicked
+    toggleNav();
+  }
+})
+
+// This has the effect of creating an 'outside click' close function, since the veil will only receive click events while the menu is open
+veil.addEventListener('click', toggleNav);
