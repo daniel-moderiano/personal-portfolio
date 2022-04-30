@@ -7,30 +7,40 @@
   <title>Personal Portfolio</title>
 </head>
 
-<body class="">
+<body class="relative">
   <!--#include file="./src/pages/projects.html" -->
   <div class="flex items-center flex-col mx-8">
-    <header class="w-full flex items-center py-6">
-      <!-- Navbar provides HTML bookmark links to scroll down page to section -->
-      <nav role="navigation" aria-label="Main menu">
-        <ul class="flex items-center">
-          <li class="px-2">
-            <a class="hover:underline" href="#intro">Intro</a>
-          </li>
-          <li class="px-2">
-            <a class="hover:underline" href="#skills">Technologies</a>
-          </li>
-          <li class="px-2">
-            <a class="hover:underline" href="#projects">Projects</a>
-          </li>
-          <li class="px-2">
-            <a class="hover:underline" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="flex flex-col items-start w-full" role="main">
 
+    
+    <!-- HAMBURGER BUTTON -->
+    <button id="hamburger" type="button" aria-label="Main menu" aria-expanded="false" aria-haspopup="true" aria-controls="mainmenu"
+      class="sm:hidden absolute left-2 top-2">
+      <span class="block w-8 h-1 bg-slate-600 transition-all my-1.5"></span>
+      <span class="block w-8 h-1 bg-slate-600 transition-all my-1.5"></span>
+      <span class="block w-8 h-1 bg-slate-600 transition-all my-1.5"></span>
+    </button>
+
+
+    <!-- Navbar provides HTML bookmark links to scroll down page to section -->
+    <nav id="mainmenu" role="navigation" aria-label="Main menu" class="hidden sm:block">
+      <ul class="flex items-center" role="menubar">
+        <li class="px-2" role="none">
+          <a class="hover:underline" href="#intro" role="menuitem">Intro</a>
+        </li>
+        <li class="px-2" role="none">
+          <a class="hover:underline" href="#skills" role="menuitem">Technologies</a>
+        </li>
+        <li class="px-2" role="none">
+          <a class="hover:underline" href="#projects" role="menuitem">Projects</a>
+        </li>
+        <li class="px-2" role="none">
+          <a class="hover:underline" href="#contact" role="menuitem">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <main class="flex flex-col items-start w-full mt-12" role="main">
       <!-- INTRODUCTION section -->
       <section id="intro" class="my-4 w-full">
         <h2 class="text-3xl font-semibold text-gray-800">Hi, I'm Daniel.</h2>
@@ -246,7 +256,8 @@
         <article class="border p-4 my-4 bg-white rounded flex flex-col">
           <h3 class="text-lg font-semibold">OptomRx</h3>
           <p>OptomRx is an industry-first web app for Australian optometrists to create and manage professional
-            therapeutic prescriptions online. Currently integrated into several optometry practices across the country - OptomRx sees daily use in clinical practice.</p>
+            therapeutic prescriptions online. Currently integrated into several optometry practices across the country -
+            OptomRx sees daily use in clinical practice.</p>
           <img src="./src/assets/images/optomrx-small.png" alt="optomrx web app dashboard">
 
           <!-- Tech stack -->
@@ -302,7 +313,7 @@
                   fill="url(#d)"></path>
               </g>
             </svg>
-            <img src="./src/assets/icons/styled-components.png" alt="styled components logo" class="w-8 h-8 mr-2" >
+            <img src="./src/assets/icons/styled-components.png" alt="styled components logo" class="w-8 h-8 mr-2">
           </div>
 
           <!-- Project links -->
@@ -316,7 +327,8 @@
         <article class="border p-4 my-4 bg-white rounded flex flex-col">
           <h3 class="text-lg font-semibold">Odinbook</h3>
           <p>Odinbook is a Facebook-esque social media website with the ability to create profiles, make posts and
-            comments, and grow your friend network. Key features include image uploads, log in with Facebook, responsive design, and good accessiblity.</p>
+            comments, and grow your friend network. Key features include image uploads, log in with Facebook, responsive
+            design, and good accessiblity.</p>
           <img src="./src/assets/images/odinbook-small.png" alt="odinbook web app profile page">
 
           <!-- Tech stack -->
