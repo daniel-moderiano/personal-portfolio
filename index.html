@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -9,87 +9,33 @@
 
 <body class="relative">
 
-  <!-- Adds a background 'shadow' or 'veil' to better empahasise the opened nav menu. Not relevant for screen readers -->
-  <!-- <div id="veil" aria-hidden="true" class="w-full bg-gray-700 h-screen fixed top-0 left opacity-0 transition-opacity duration-300 pointer-events-none"></div> -->
-
-  <!-- HAMBURGER BUTTON -->
-  <!-- <button id="hamburger" type="button" aria-label="Main menu" aria-expanded="false" aria-haspopup="true" aria-controls="mainmenu"
-      class="sm:hidden fixed left-2 top-2 z-10">
-      <span id="line1" class="block w-8 h-1 bg-slate-600 transition-all duration-300 my-1.5 rounded-full"></span>
-      <span id="line2" class="block w-8 h-1 bg-slate-600 transition-all duration-300 my-1.5 rounded-full"></span>
-      <span id="line3" class="block w-8 h-1 bg-slate-600 transition-all duration-300 my-1.5 rounded-full"></span>
-    </button> -->
-
-  <!-- Mobile nav -->
-  <!-- <nav id="mainmenu" role="navigation" aria-label="Main menu" class="shadow-md fixed w-10/12 h-full bg-white -left-full transition-all duration-300">
-      <ul class="flex flex-col items-center w-full mt-16" role="menubar">
-        <li class="w-full text-left" role="none">
-          <a class="py-3 px-8 w-full block hover:underline font-semibold text-2xl" href="#intro" role="menuitem">Intro</a>
+  <header role="banner" class="px-2 py-3 text-black shadow-sm fixed top-0 left-0 w-full font-light text-lg bg-white transition-all duration-300">
+    <nav id="mainmenu" role="navigation" aria-label="Main menu">
+      <ul class="flex items-center justify-evenly" role="menubar">
+        <li class="px-2" role="none">
+          <a class="decoration-gray-600 decoration-from-font font-semibold underline-offset-4" href="#home" role="menuitem">Home</a>
         </li>
-        <li class="w-full text-left" role="none">
-          <a class="py-3 px-8 w-full block hover:underline font-semibold text-2xl" href="#skills" role="menuitem">Technologies</a>
+        <li class="px-2" role="none">
+          <a class="hover:underline text" href="#skills" role="menuitem">Skills</a>
         </li>
-        <li class="w-full text-left" role="none">
-          <a class="py-3 px-8 w-full block hover:underline font-semibold text-2xl" href="#projects" role="menuitem">Projects</a>
+        <li class="px-2" role="none">
+          <a class="hover:underline text" href="#projects" role="menuitem">Projects</a>
         </li>
-        <li class="w-full text-left" role="none">
-          <a class="py-3 px-8 w-full block hover:underline font-semibold text-2xl" href="#contact" role="menuitem">Contact</a>
+        <li class="px-2" role="none">
+          <a class="hover:underline text" href="#contact" role="menuitem">Contact</a>
         </li>
       </ul>
-    </nav> -->
-
-  <nav id="mainmenu" role="navigation" aria-label="Main menu"
-    class="px-2 py-3 text-black shadow-sm fixed top-0 left-0 w-full font-light text-lg bg-white transition-all duration-300">
-    <ul class="flex items-center justify-evenly" role="menubar">
-      <li class="px-2" role="none">
-        <a class="decoration-gray-600 decoration-from-font font-semibold underline-offset-4" href="#home" role="menuitem">Home</a>
-      </li>
-      <li class="px-2" role="none">
-        <a class="hover:underline text" href="#skills" role="menuitem">Skills</a>
-      </li>
-      <li class="px-2" role="none">
-        <a class="hover:underline text" href="#projects" role="menuitem">Projects</a>
-      </li>
-      <li class="px-2" role="none">
-        <a class="hover:underline text" href="#contact" role="menuitem">Contact</a>
-      </li>
-    </ul>
-  </nav>
+    </nav>
+  </header>
 
 
   <div class="flex items-center flex-col mx-4">
-    <!-- Navbar provides HTML bookmark links to scroll down page to section -->
-    <!-- Desktop nav -->
-    <!-- <nav id="mainmenu" role="navigation" aria-label="Main menu" class="px-2 py-4 bg-gray-800 text-white shadow-md">
-      <ul class="flex items-center" role="menubar">
-        <li class="px-2" role="none">
-          <a class="hover:underline" href="#skills" role="menuitem">Technologies</a>
-        </li>
-        <li class="px-2" role="none">
-          <a class="hover:underline" href="#projects" role="menuitem">Projects</a>
-        </li>
-        <li class="px-2" role="none">
-          <a class="hover:underline" href="#contact" role="menuitem">Contact</a>
-        </li>
-      </ul>
-    </nav> -->
-
 
     <main class="flex flex-col items-start w-full" role="main">
       <!-- INTRODUCTION section -->
-      <section id="intro" class="w-full h-screen flex flex-col items-start justify-center">
-        <h2 class="text-3xl font-semibold ">Hi, I'm Daniel.</h2>
-        <!-- <p>I'm a full stack web developer.</p> -->
+      <section id="home" class="w-full h-screen flex flex-col items-start justify-center">
+        <h1 class="text-3xl font-semibold ">Hi, I'm Daniel.</h1>
         <p class="text-2xl">I'm a full stack web developer</p>
-
-        <!-- Mobile nav/links here -->
-        <!-- <nav aria-label="main menu" class="mt-4">
-          <ul class="flex items-center justify-start">
-            <li class="px-2 py-1 border-gray-800 border shadow-sm bg-white mr-2"><a href="#skills">Technologies</a></li>
-            <li class="px-2 py-1 border-gray-800 border shadow-sm bg-white mr-2"><a href="#projects">Projects</a></li>
-            <li class="px-2 py-1 border-gray-800 border shadow-sm bg-white mr-2"><a href="#contact">Contact</a></li>
-          </ul>
-        </nav> -->
       </section>
 
       <!-- SKILLS/TECH STACK section -->
