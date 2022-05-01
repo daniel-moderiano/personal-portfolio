@@ -39,22 +39,25 @@
     </nav> -->
 
   <nav id="mainmenu" role="navigation" aria-label="Main menu"
-    class="px-2 py-4 bg-gray-800 text-white shadow-md fixed top-0 left-0 w-full justify-evenly">
-    <ul class="flex items-center" role="menubar">
+    class="px-2 py-3 text-black shadow-sm fixed top-0 left-0 w-full font-light text-lg bg-white transition-all duration-300">
+    <ul class="flex items-center justify-evenly" role="menubar">
       <li class="px-2" role="none">
-        <a class="hover:underline text-sm" href="#skills" role="menuitem">TECHNOLOGIES</a>
+        <a class="decoration-gray-600 decoration-from-font font-semibold underline-offset-4" href="#home" role="menuitem">Home</a>
       </li>
       <li class="px-2" role="none">
-        <a class="hover:underline text-sm" href="#projects" role="menuitem">PROJECTS</a>
+        <a class="hover:underline text" href="#skills" role="menuitem">Skills</a>
       </li>
       <li class="px-2" role="none">
-        <a class="hover:underline text-sm" href="#contact" role="menuitem">CONTACT</a>
+        <a class="hover:underline text" href="#projects" role="menuitem">Projects</a>
+      </li>
+      <li class="px-2" role="none">
+        <a class="hover:underline text" href="#contact" role="menuitem">Contact</a>
       </li>
     </ul>
   </nav>
 
 
-  <div class="flex items-center flex-col mx-3">
+  <div class="flex items-center flex-col mx-4">
     <!-- Navbar provides HTML bookmark links to scroll down page to section -->
     <!-- Desktop nav -->
     <!-- <nav id="mainmenu" role="navigation" aria-label="Main menu" class="px-2 py-4 bg-gray-800 text-white shadow-md">
@@ -75,7 +78,7 @@
     <main class="flex flex-col items-start w-full" role="main">
       <!-- INTRODUCTION section -->
       <section id="intro" class="w-full h-screen flex flex-col items-start justify-center">
-        <h2 class="text-3xl font-semibold text-gray-800">Hi, I'm Daniel.</h2>
+        <h2 class="text-3xl font-semibold ">Hi, I'm Daniel.</h2>
         <!-- <p>I'm a full stack web developer.</p> -->
         <p class="text-2xl">I'm a full stack web developer</p>
 
@@ -95,7 +98,7 @@
         <h2 class="text-xl font-semibold text-gray-800">Technologies</h2>
 
         <!-- FRONTEND section -->
-        <section class="border p-4 my-4 text-center bg-white rounded">
+        <section class="my-4 text-center ">
           <h3 class="text-lg font-semibold mb-4">Frontend</h3>
           <ul class="grid grid-cols-3 gap-2 gap-y-4">
             <li class="flex flex-col items-center justify-center">
@@ -171,7 +174,7 @@
         </section>
 
         <!-- BACKEND section -->
-        <section class="border p-4 my-4 text-center bg-white rounded">
+        <section class="my-4 ">
           <h3 class="text-lg font-semibold mb-4">Backend</h3>
           <ul class="grid grid-cols-3 gap-2 gap-y-4">
             <li class="flex flex-col items-center justify-center">
@@ -255,7 +258,7 @@
         </section>
 
         <!-- MISCELLANEOUS section -->
-        <section class="border p-4 my-4 text-center bg-white rounded">
+        <section class="border p-4 my-4 text-center  rounded">
           <h3 class="text-lg font-semibold mb-4">Miscellaneous</h3>
           <ul class="grid grid-cols-3 gap-2">
             <li class="flex flex-col items-center justify-center">
@@ -290,11 +293,11 @@
 
 
       <!-- PROJECTS section -->
-      <section id="projects" class="my-4 w-full">
+      <section id="projects" class="mt-4 mb-24 w-full">
         <h2 class="text-2xl font-semibold text-gray-800 w-full text-center mb-4">Projects</h2>
 
         <!-- OPTOMRX -->
-        <article class="mt-8 mb-4 bg-white flex flex-col">
+        <article class="mt-8 mb-4  flex flex-col">
           <img src="./src/assets/images/optomrx-small.png" alt="optomrx web app dashboard">
           <h3 class="text-xl font-semibold mt-1 mb-4">OptomRx</h3>
           <p class="mb-4">OptomRx is an industry-first web app for Australian optometrists to create and manage professional therapeutic prescriptions online. Currently integrated into several optometry practices across the country; OptomRx sees daily use in clinical practice.</p>
@@ -363,17 +366,17 @@
 
           <!-- Tech stack -->
           <div class="border-t">
-            <p class="text-sm text-gray-700 mt-1 italic">React, Styled Components, Firebase, Google Places API</p>
+            <p class="text-sm text-gray-700 mt-1 italic">React, Styled Components, Firebase</p>
           </div>
         </article>
 
         <!-- ODINBOOK -->
-        <article class="mt-24 mb-4 bg-white flex flex-col">
+        <article class="mt-24 mb-4  flex flex-col">
           <img src="./src/assets/images/odinbook-small.png" alt="odinbook web app profile page">
           <h3 class="text-xl font-semibold mt-1 mb-4">Odinbook</h3>
           <p class="mb-4">Odinbook is a Facebook-esque social media website with the ability to create profiles, make posts and
             comments, and grow your friend network. Key features include image uploads, log in with Facebook, responsive
-            design, and good accessiblity.</p>
+            design, and solid accessiblity.</p>
     
 
           <!-- Tech stack -->
@@ -427,7 +430,7 @@
 
           <!-- Tech stack -->
           <div class="border-t">
-            <p class="text-sm text-gray-700 mt-1 italic">React, Tailwind, NodeJS, Express, MongoDB, Azure Computer Vision API, Cloudinary API</p>
+            <p class="text-sm text-gray-700 mt-1 italic">React, Tailwind, NodeJS, Express, MongoDB</p>
           </div>
           
         </article>
@@ -436,24 +439,21 @@
 
       <!-- CONTACT FORM section -->
       <section id="contact" class="my-4 w-full">
-        <h2 class="text-xl font-semibold text-gray-800">Contact</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, vero nisi. Quidem doloribus voluptatibus
-          architecto natus unde rem libero laboriosam totam deleniti nemo, impedit, ducimus id nobis, alias aspernatur
-          similique?</p>
-        <form class="rounded p-8">
-          <label for="name">
+        <h2 class="text-2xl font-semibold text-gray-800 w-full text-center">Get in touch</h2>
+        <form class="mt-6 flex flex-col items-center w-full px-4">
+          <label for="name" class="mb-4 w-full">
             Name
             <input
               class="w-full mt-2 border rounded-sm border-slate-300 py-2 px-3 focus:outline-none focus:ring ring-transparent ring-offset-2 ring-offset-blue-300/30 focus:border-blue-400"
               type="text" required>
           </label>
-          <label for="email">
+          <label for="email" class="mb-4 w-full">
             Email
             <input
               class="w-full mt-2 border rounded-sm border-slate-300 py-2 px-3 focus:outline-none focus:ring ring-transparent ring-offset-2 ring-offset-blue-300/30 focus:border-blue-400"
               type="email" required>
           </label>
-          <label for="message">
+          <label for="message" class="mb-4 w-full">
             Message
             <textarea
               class="w-full mt-2 border rounded-sm border-slate-300 py-2 px-3 focus:outline-none focus:ring ring-transparent ring-offset-2 ring-offset-blue-300/30 focus:border-blue-400"
@@ -461,12 +461,18 @@
           </label>
           <button class="rounded py-2 px-4 bg-blue-700 text-white font-semibold">Send message</button>
         </form>
+
+        <div class="flex items-center w-full my-6">
+          <a href="">LinkedIn</a>
+          <a href="">Email</a>
+          <a href="">GitHub</a>
+        </div>
       </section>
 
     </main>
 
-    <footer role="contentinfo">
-      <p class="text-gray-700 text-sm">&copy; 2022 Daniel Moderiano</p>
+    <footer role="contentinfo" class="py-8">
+      <p class="text-gray-700 text-sm">Copyright &copy; 2022 Daniel Moderiano</p>
     </footer>
   </div>
   <script type="module" src="./src/main.js"></script>
