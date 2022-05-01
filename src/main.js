@@ -14,6 +14,15 @@ const toggleNav = () => {
   mainMenu.classList.toggle('left-0');
   mainMenu.classList.toggle('-left-full');
 
+  // mainMenu.classList.toggle('-left-full');
+  // mainMenu.classList.toggle('-top-full');
+
+  // mainMenu.classList.toggle('left-10');
+  // mainMenu.classList.toggle('top-12');
+  mainMenu.classList.toggle('opacity-100');
+  
+
+
   // Animate hamburger icon
   lineTwo.classList.toggle('opacity-0');
   lineOne.classList.toggle('rotate-45');
@@ -27,10 +36,14 @@ const toggleNav = () => {
   veil.classList.toggle('pointer-events-none');
 
   // Toggle aria expanded based on state at time of clicking btn
-  if (hamburgerBtn.ariaExpanded === 'true') {    
+  if (hamburgerBtn.ariaExpanded === 'true') {     // menu is about to close   
     hamburgerBtn.ariaExpanded = 'false';
-  } else {
+    mainMenu.ariaHidden = 'true';
+    mainMenu.classList.add('pointer-events-none');
+  } else {    // menu is about to open
     hamburgerBtn.ariaExpanded = 'true';
+    mainMenu.ariaHidden = 'false';
+    mainMenu.classList.remove('pointer-events-none');
   }
 }
 
