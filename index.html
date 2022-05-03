@@ -16,26 +16,31 @@
 
   <header role="banner"
     class="px-2 py-3 text-gray-800 shadow-sm fixed top-0 left-0 w-full font-light text-[17px] sm:text-[18px] bg-white/90 backdrop-blur-sm transition-all duration-300 z-10">
-    <nav id="mainmenu" role="navigation" aria-label="Main menu">
-      <ul class="flex items-center justify-evenly" role="menubar">
-        <li class="px-2" role="none">
-          <a class="decoration-gray-600 decoration-from-font font-semibold underline-offset-4" href="#home"
-            role="menuitem">Home</a>
-        </li>
-        <li class="px-2" role="none">
-          <a class="hover:underline text" href="#projects" role="menuitem">Projects</a>
-        </li>
-        <li class="px-2" role="none">
-          <a class="hover:underline text" href="#skills" role="menuitem">Skills</a>
-        </li>
-        <li class="px-2" role="none">
-          <a class="hover:underline text" href="#contact" role="menuitem">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="xl:max-w-6xl xl:flex items-center justify-between mx-auto">
+      <button class="hidden xl:block text-lg font-medium">
+        DM
+      </button>
+      <nav id="mainmenu" role="navigation" aria-label="Main menu">
+        <ul class="flex items-center justify-evenly" role="menubar">
+          <li class="px-2 xl:px-4" role="none">
+            <a class="decoration-gray-600 decoration-from-font font-semibold underline-offset-4" href="#home"
+              role="menuitem">Home</a>
+          </li>
+          <li class="px-2 xl:px-4" role="none">
+            <a class="hover:underline text" href="#projects" role="menuitem">Projects</a>
+          </li>
+          <li class="px-2 xl:px-4" role="none">
+            <a class="hover:underline text" href="#skills" role="menuitem">Skills</a>
+          </li>
+          <li class="px-2 xl:pl-4" role="none">
+            <a class="hover:underline text" href="#contact" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div class="flex items-center flex-col px-5 sm:px-12 md:px-16 mx-auto max-w-4xl lg:max-w-6xl">
+  <div class="flex items-center flex-col px-5 sm:px-12 md:px-16 mx-auto max-w-4xl xl:max-w-7xl">
     <main class="flex flex-col items-start w-full" role="main">
       <!-- INTRODUCTION section -->
       <section id="home" class="relative w-full h-screen flex flex-col items-start justify-center">
@@ -91,9 +96,9 @@
         </h2>
 
         <!-- OPTOMRX -->
-        <article class="flex flex-col lg:flex-row">
-          <img src="./src/assets/images/optomrx-small.png" alt="optomrx web app dashboard" class="shadow-md rounded-lg lg:max-w-[600px]">
-          <div class="lg:flex lg:flex-col lg:ml-8">
+        <article class="flex flex-col xl:flex-row">
+          <img src="./src/assets/images/optomrx-small.png" alt="optomrx web app dashboard" class="shadow-md rounded-lg xl:max-w-2xl">
+          <div class="xl:flex xl:flex-col xl:ml-8">
             <h3 class="text-2xl font-semibold mt-2">OptomRx</h3>
 
             <!-- Tech stack -->
@@ -119,10 +124,10 @@
         </article>
 
         <!-- ODINBOOK -->
-        <article class="mt-16 flex flex-col lg:flex-row">
+        <article class="mt-16 flex flex-col xl:flex-row">
           <img src="./src/assets/images/odinbook-small.png" alt="odinbook web app profile page"
-            class="shadow-md rounded-lg lg:max-w-[600px]">
-          <div class="lg:flex lg:flex-col lg:ml-8">
+            class="shadow-md rounded-lg xl:max-w-2xl">
+          <div class="xl:flex xl:flex-col xl:ml-8">
             <h3 class="text-2xl font-semibold mt-2">Odinbook</h3>
 
             <!-- Tech stack -->
