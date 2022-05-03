@@ -1311,12 +1311,40 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 2rem;
   }
 
+  .xl\:mt-36 {
+    margin-top: 9rem;
+  }
+
+  .xl\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .xl\:mt-48 {
+    margin-top: 12rem;
+  }
+
+  .xl\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .xl\:block {
     display: block;
   }
 
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:h-auto {
+    height: auto;
+  }
+
+  .xl\:h-36 {
+    height: 9rem;
   }
 
   .xl\:max-w-2xl {
@@ -1363,5 +1391,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:pl-4 {
     padding-left: 1rem;
+  }
+
+  .xl\:pb-1 {
+    padding-bottom: 0.25rem;
+  }
+
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
