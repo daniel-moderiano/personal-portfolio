@@ -893,6 +893,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(3 105 161 / var(--tw-bg-opacity));
 }
 
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1261,6 +1271,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-sky-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(12 74 110 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .hover\:font-semibold:hover {
@@ -1807,5 +1827,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:text-\[20px\] {
     font-size: 20px;
+  }
+
+  .xl\:font-medium {
+    font-weight: 500;
   }
 }
