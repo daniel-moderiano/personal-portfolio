@@ -57,5 +57,3 @@ const checkScroll = () => {
 };
 
 // window.addEventListener('scroll', checkScroll);
-
-
