@@ -10,13 +10,11 @@ This portfolio aims to showcase my best projects, tech stack, resume, and provid
 
 ### Technologies used
 
-In keeping with the goals of this portfolio, the tech stack used here is minimal. This provides a seamless user experience to everyone, including those users with JavaScript disabled.
+In keeping with the goals of this portfolio, the tech stack used here is minimal. This provides a seamless user experience to everyone, including those users with JavaScript disabled. The tech stack includes:
 
 * HTML
 * CSS
 * Tailwind CSS
-* Netlify (deployment)
+* Netlify (deployment and form handling)
 
-**No JavaScript or frameworks!**
-
-Thanks for visiting!
+I hope you enjoy browsing the portfolio. Thanks for visiting!
