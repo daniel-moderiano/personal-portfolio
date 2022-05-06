@@ -24,7 +24,7 @@ First, clone the repository
 git clone git@github.com:daniel-moderiano/personal-portfolio.git
 ```
 
-Inside the root directoy, install all dependencies with npm
+Inside the root directory, install all dependencies with npm
 
 ```
 npm install
